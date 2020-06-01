@@ -12,7 +12,7 @@ module.exports = {
 };
 
 function find() {
-	return db('users').select('id', 'username', 'profileImg').orderBy('id');
+	return db('users').select('id', 'username', 'profileImg', 'role').orderBy('id');
 }
 
 function findBy(filter) {
